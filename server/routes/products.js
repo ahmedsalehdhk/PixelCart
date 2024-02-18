@@ -1,4 +1,5 @@
 const express = require('express')
+const Product = require('../models/productModel')
 
 const router = express.Router()
 
@@ -14,6 +15,12 @@ router.get('/:id', (req, res) => {
 
 // CREATE a new product
 router.post('/', (req, res) => {
+    const {title, category, price, details} = req.body
+    try {
+        const product = 
+    } catch(error) {
+
+    }
     res.json({mssg: 'creating a new product'})
 })
 
